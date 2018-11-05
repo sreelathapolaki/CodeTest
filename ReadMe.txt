@@ -3,12 +3,18 @@ Sreelatha Polaki Oct.31st 2018
 
 *** The CES_CodeTest folder contains the below files ***
 
-dataanalyze.cpp (source file)
+include/CSVReader.h
+include/CSVDataHandler.h
+include/CSVWriter.h
+src/CSVReader.cpp
+src/CSVDataHandler.cpp
+src/CSVWriter.cpp
+
 makefile (makefile for build)
-dataanalyze.exe (generated output binary)
+CSVDataParser.exe (generated output binary)
 marketdata_for_interview.csv (input file)
 analyzeddata.csv (generated output file)
-
+DesignDoc.docx (Design document)
 
 *** To build the source on Windows ***
 
@@ -18,16 +24,19 @@ analyzeddata.csv (generated output file)
 
 *** To Run the executable ***
 
-cmd> dataanalyze.exe
+cmd> CSVDataParser.exe
 It prompts for input file path ( please enter valid input file path )
 
 
 *** Design and impementation ***
+
 The source code used Boost library tokenizers to parse the CSV file and saved data to std::vector container. 
-No specific design patterns followed for this application.
-If the fields in csv modified then the program will not work as expected.
-I have not used any object oriented programming in this application as the code is not designed for any file format.
-I have tested the code only with the provided input .csv file without any modifications.
+
+Please refer the DesignDoc.docx for the high level design of the program
+
+If the fields in csv modified (remove/change order) then the program will work as expected.
+I have used Some base classes for CSV Reading/Parsing/Writing to make the modification easy if any changes in CSV fields.
+I have tested the code with the provided input .csv file and also with by the order of fields and remove some of the fields.
 
 *** Build/Test Environment ***
 OS: Windows 10 x64
