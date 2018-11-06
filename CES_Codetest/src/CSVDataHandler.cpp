@@ -75,7 +75,7 @@ namespace DataAnalyze
 	   {
 		   std::vector<std::string> vstrings(ii->second.begin(), ii->second.end());
 		   long double avgbid = std::stold(vstrings.at(4))/std::stold(vstrings.at(5));
-		   line = (*ii).first + "," + vstrings.at(0) +" "+ vstrings.at(1) +","+vstrings.at(2) +","+ vstrings.at(4)+","+ std::to_string(avgbid); 
+		   line = (*ii).first + "," + vstrings.at(0) +","+ vstrings.at(1) +","+vstrings.at(2) +","+ vstrings.at(4)+","+ std::to_string(avgbid); 
 		   finaloutvec.push_back( line);
 	   }
 	   
