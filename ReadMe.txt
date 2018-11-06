@@ -36,12 +36,18 @@ Please refer the DesignDoc.docx for the high level design of the program
 
 If the fields in csv modified (remove/change order) then the program will work as expected.
 I have used Some base classes for CSV Reading/Parsing/Writing to make the modification easy if any changes in CSV fields.
+To Sort the fileds based on Ticker I have used C++ STL library sort() method. 
 I have tested the code with the provided input .csv file and also with by the order of fields and remove some of the fields.
 
 *** Build/Test Environment ***
 OS: Windows 10 x64
 Text Editor: Notepad++
 compiler: gcc version 8.1.0 (GCC)
+
+
+*** Output File Fields ***
+
+<Ticker>,<Max of (Ask - Bid)>,<Min of (Ask -Bid)>,<Sum(Volume)>,<Max Timestamp difference between consecutive quote for a ticker>,<Sum(Bid*AskSize + Ask*BidSize)/Sum(AskSize+BidSize)> 
 
 
 *** Time calculations ***
