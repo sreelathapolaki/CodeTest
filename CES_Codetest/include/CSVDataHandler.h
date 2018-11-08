@@ -24,7 +24,8 @@ namespace DataAnalyze
 			   ~CSVDataHandler();
 			   void ParseCSVData(vector<string> vec);
 			   std::string getTicker();
-			   long double getBidDiff();
+			   double getBid();
+			   double getAsk();
 			   long double getBidCal();
 			   long long getVolume();
 			   unsigned long getTimestamp();
@@ -33,7 +34,8 @@ namespace DataAnalyze
 		private:
 		        void SortVector(vector<string>& vec);
 				std::string ticker ;
-				long double bidDiff;
+				double bid;
+				double ask;
 				long double bidCal;
 				long long volume;
 				unsigned long timestamp;

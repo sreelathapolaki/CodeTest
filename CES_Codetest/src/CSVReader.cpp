@@ -69,8 +69,8 @@ namespace DataAnalyze
 			std::istream_iterator<std::string> end;
 			std::vector<std::string> vstrings (begin, end);
 			ParseCSVLine(vstrings);
-			long double bidval = getBid() * getAskSize() + getAsk() * getBidSize();
-			csvline = getTicker() + " " + std::to_string(getAsk() - getBid()) + " " + std::to_string(getVolume()) + " " + std::to_string(getTimeStamp())+ " " +  std::to_string( bidval ) + " " + std::to_string(getAskSize() + getBidSize());
+			long double bidval = (getBid() * getAskSize()) + (getAsk() * getBidSize());
+			csvline = getTicker() + " " + std::to_string(getBid()) +" " + std::to_string(getAsk()) + " " + std::to_string(getVolume()) + " " + std::to_string(getTimeStamp())+ " " +  std::to_string( bidval ) + " " + std::to_string(getAskSize() + getBidSize());
 			outputVec.push_back(csvline);
 		}
 	}

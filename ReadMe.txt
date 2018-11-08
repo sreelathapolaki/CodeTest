@@ -42,3 +42,16 @@ I have tested the code with the provided input .csv file and also with by the or
 OS: Windows 10 x64
 Text Editor: Notepad++
 compiler: gcc version 8.1.0 (GCC)
+
+
+*** Output File Fields ***
+
+<Ticker>, <Max(Bid)>, < Max TimeStamp Bid> , <Max(Ask)>, < Max TimeStamp Ask>, < Max of(TimeStamp diff between consecutive tickers)> and <Sum(Bid*AskSize + Ask*BidSize)/Sum(AskSize+BidSize)>
+
+
+
+*** Time calculations ***
+
+Design - 8 hours
+Code/Implementation - 6 hours
+Testing - 2 hours 
