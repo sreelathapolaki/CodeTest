@@ -11,12 +11,12 @@ namespace CodeExercise
     {
         static void Main(string[] args)
         {
-            if (args.Length == 0)
+            if (args.Length != 2)
             {
                 Console.WriteLine("Please Provide chess piece type and its X,Y Position");
                 Console.WriteLine("Usage: CodeExercise1 <Knight> <d2>");
+                return;
             }
-
             string pieceType = args[0];
             char[] c = new char[args[1].Length];
             int i = 0;
@@ -27,10 +27,8 @@ namespace CodeExercise
             }
 
             char ch = c[0];
-            int x = 0;
-
-            int y = int.Parse(c[1].ToString());
-
+            int rowPos = 0;
+            int colPos = int.Parse(c[1].ToString());
             var res = Regex.Matches(args[1], "^[a-z]\\d$");
 
             if (res.Count == 0)
@@ -42,61 +40,67 @@ namespace CodeExercise
             switch (ch)
             {
                 case 'a':
-                    x = 1;
+                    rowPos = 1;
                     break;
                 case 'b':
-                    x = 2;
+                    rowPos = 2;
                     break;
                 case 'c':
-                    x = 3;
+                    rowPos = 3;
                     break;
                 case 'd':
-                    x = 4;
+                    rowPos = 4;
                     break;
                 case 'e':
-                    x = 5;
+                    rowPos = 5;
                     break;
                 case 'f':
-                    x = 6;
+                    rowPos = 6;
                     break;
                 case 'g':
-                    x = 7;
+                    rowPos = 7;
                     break;
                 case 'h':
-                    x = 8;
+                    rowPos = 8;
                     break;
                 default:
                     break;
             }
-
-            if ((x <= 0 || x > 8) || (y <= 0 || y > 8))
+            if ((rowPos <= 0 || rowPos > 8) || (colPos <= 0 || colPos > 8))
             {
                 Console.WriteLine("Piece position is invalid, Please provide valid positions ");
                 return;
             }
-
             if (pieceType.Equals("Knight", StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine("Below are the possible moves of Knight at " + ch + y.ToString() + " position are: ");
-                PieceMoves.KnightMoves(x, y);
+                Console.WriteLine("Below are the possible moves of Knight at " + ch + colPos.ToString() + " position are: ");
+                string inputPos = rowPos.ToString() + colPos.ToString();
+                Knight moves = new Knight();
+                List<string> movesList = moves.Moves(rowPos, colPos);
+                ChessBase.PrintPossibleMoves(inputPos, movesList);
             }
             else if (pieceType.Equals("Rook", StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine("Below are the possible moves of Rook at " + ch + y.ToString() + " position are: ");
-                PieceMoves.RookMoves(x, y);
+                Console.WriteLine("Below are the possible moves of Rook at " + ch + colPos.ToString() + " position are: ");
+                string inputPos = rowPos.ToString() + colPos.ToString();
+                Rook moves = new Rook();
+                List<string> movesList = moves.Moves(rowPos, colPos);
+                ChessBase.PrintPossibleMoves(inputPos, movesList);
             }
             else if (pieceType.Equals("Queen", StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine("Below are the possible moves of Queen at " + ch + y.ToString() + "position are: ");
-                PieceMoves.RookMoves(x, y);
-                PieceMoves.BishopMoves(x, y);
+                Console.WriteLine("Below are the possible moves of Queen at " + ch + colPos.ToString() + " position are: ");
+                string inputPos = rowPos.ToString() + colPos.ToString();
+                Queen moves = new Queen();
+                List<string> movesList = moves.Moves(rowPos, colPos);
+                ChessBase.PrintPossibleMoves(inputPos, movesList);
             }
             else
             {
                 Console.WriteLine("Invalid input. Only Knight,Rook and Queen moves are supported");
+                return;
             }
             Console.ReadKey();
-
         }
     }
 }

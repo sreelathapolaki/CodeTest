@@ -1,0 +1,7 @@
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\bin\Debug\CodeExercise.exe.config
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\bin\Debug\CodeExercise.exe
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\bin\Debug\CodeExercise.pdb
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\obj\Debug\CodeExercise.csproj.CoreCompileInputs.cache
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\obj\Debug\CodeExercise.exe
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\obj\Debug\CodeExercise.pdb
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\CodeExercise\obj\Debug\CodeExercise.csprojAssemblyReference.cache

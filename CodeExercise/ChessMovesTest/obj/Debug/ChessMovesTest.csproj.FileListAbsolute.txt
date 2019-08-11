@@ -1,0 +1,15 @@
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\ChessMovesTest.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\ChessMovesTest.pdb
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\CodeExercise.exe
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\CodeExercise.pdb
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\bin\Debug\CodeExercise.exe.config
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\obj\Debug\ChessMovesTest.csprojAssemblyReference.cache
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\obj\Debug\ChessMovesTest.csproj.CoreCompileInputs.cache
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\obj\Debug\ChessMovesTest.csproj.CopyComplete
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\obj\Debug\ChessMovesTest.dll
+C:\PS\TestProj\CodeTest\CodeTest\CodeExercise\ChessMovesTest\obj\Debug\ChessMovesTest.pdb
